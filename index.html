@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 	  <header class="main-header">
@@ -11,12 +14,12 @@
 				  <a class="logo-link">Техномарт</a>
 					<form class="search-form" action="#" method="get">
 					  <label class="search-form__label">
-						  Поиск:<input type="text" name="search" id="search">
+						  <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск:">
 						</label>
 					</form>
 					<a class="bookmarks" href="#">Закладки: 0</a>
 					<a class="cart" href="#">Корзина: 0</a>
-					<a class="checkout" href="#">Оформить заказ</a>
+					<a class="checkout  green" href="#">Оформить заказ</a>
 				</div>
 				<div class="main-header__middle">
 				  <h1 class="main-title">
@@ -33,7 +36,7 @@
 						<a class="user-block__reg" href="#">Регистрация</a>
 					</div>
 				</div>
-				<nav class="main-header__bottom  main-nav">
+				<nav class="main-nav">
 					<ul class="main-menu">
 						<li class="main-menu__item">
 							<a class="main-menu__link">Главная</a>
@@ -66,19 +69,19 @@
 				  <h2 class="visuallyhidden">
 					  Каталог
 					</h2>
-					<article class="catalog-category  new">
+					<article class="catalog-category  materials  new">
 					  <h2 class="catalog-category__title">
 						  Материалы
 						</h2>
 						<a class="btn" href="#">На любой вкус</a>
 					</article>
-					<article class="catalog-category">
+					<article class="catalog-category  tools">
 					  <h2 class="catalog-category__title">
 						  Инструмент
 						</h2>
 						<a class="btn" href="#">На все случаи</a>
 					</article>
-					<article class="catalog-category">
+					<article class="catalog-category  mechanism">
 					  <h2 class="catalog-category__title">
 						  Техника
 						</h2>
@@ -89,13 +92,13 @@
 						  Слайдер
 						</h2>
 					</article>
-					<article class="catalog-category">
+					<article class="catalog-category  sale">
 					  <h2 class="catalog-category__title">
 						  Скидки 50%
 						</h2>
 						<a class="btn" href="#">На 350 товаров</a>
 					</article>
-					<article class="catalog-category">
+					<article class="catalog-category  delivery">
 					  <h2 class="catalog-category__title">
 						  Доставка
 						</h2>
