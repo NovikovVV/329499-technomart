@@ -74,17 +74,19 @@ body {
 .logo-link {
   position: relative;
   display: inline-block;
-  width: 220px;
+  min-width: 220px;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
   background-color: #ff5357;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 28px;
   text-transform: uppercase;
   vertical-align: top;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .logo-link::after {
@@ -139,6 +141,7 @@ body {
 .cart:active,
 .checkout:active {
   background-color: #161d29;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .green {
@@ -378,6 +381,14 @@ body {
   padding-bottom: 86px;
 }
 
+.main .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .catalog {
   display: flex;
   flex-direction: row;
@@ -450,7 +461,32 @@ body {
 .slider {
   width: 620px;
   height: 268px;
-  background-color: red;
+  background-color: lightblue;
+	position: relative;
+}
+
+.prev-slide {
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+	cursor: pointer;
+}
+
+.next-slide {
+  right: 30px;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.prev-slide:active,
+.next-slide:active {
+  opacity: 0.5;
 }
 
 .popular-goods,
@@ -501,5 +537,62 @@ body {
 }
 
 .brand__img {
- margin: auto;
+  margin: auto;
+}
+
+.partners {
+  list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.partners__item {
+  margin-bottom: 10px;
+}
+
+.partners__link {
+  text-decoration: none;
+	color: #000000;
+	position: relative;
+}
+
+.partners__link::before {
+  content: "";
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	background-color: #ff5357;
+	top: 10px;
+	left: -45px;
+}
+
+.main-footer__top .container,
+.main-footer__bottom .container {
+  display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-menu,
+.catalog-nav {
+  list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social__btn {
+  font-size: 0;
+	line-height: 0;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 50%;
 }
