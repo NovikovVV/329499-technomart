@@ -1531,3 +1531,16 @@ body {
 .catalog-page .header-contacts {
   margin-left: 10px;
 }
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+  width: 100%;
+  padding-left: 25px;
+	padding-right: 25px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}

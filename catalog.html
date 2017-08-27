@@ -51,7 +51,7 @@
               <a class="main-menu__link" href="#">Компания</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link  disabled-link">Каталог</a>
+              <a class="main-menu__link" href="#">Каталог</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="#">Новости</a>
@@ -70,3 +70,71 @@
       </div>
     </div>
   </header>
+<main class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrubms__link" href="index.html" alt="Главная">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrubms__link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrubms__link" href="#">Инструмент</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrubms__link">Перфораторы</a>
+      </li>
+    </ul>
+    <h1 class="page-title">
+      Перфораторы
+    </h1>
+    <section class="catalog-window">
+      <h2 class="visuallyhidden">
+        Витрина
+      </h2>
+      <form class="filters" action="#" method="get">
+        <span class="form-name">Фильтр:</span>
+        <fieldset class="filters__fieldset">
+          <legend class="filters__legend">
+            Цена:
+          </legend>
+          <div class="price-filter">
+            <div class="price-filter__scale">
+              <div class="price-filter__range">
+                <div class="price-filter__toggle toggle-min"></div>
+                <div class="price-filter__toggle toggle-max"></div>
+              </div>
+            </div>
+          </div>
+          <label class="filters_label">
+            <input class="filters__input" type="text" name="price" placeholder="0">
+          </label>
+          <label class="filters_label">
+            <input class="filters__input" type="text" name="price" placeholder="30000">
+          </label>
+        </fieldset>
+        <fieldset class="filters__fieldset">
+          <legend class="filters__legend">
+            Производители:
+          </legend>
+          <label class="filters__label">
+            <input class="filters__checkbox" type="checkbox" name="brand" value="Bosch">Bosch
+          </label>
+          <label class="filters__label">
+            <input class="filters__checkbox" type="checkbox" name="brand" value="Интерскол">Bosch
+          </label>
+          <label class="filters__label">
+            <input class="filters__checkbox" type="checkbox" name="brand" value="Bosch">Bosch
+          </label>
+          <label class="filters__label">
+            <input class="filters__checkbox" type="checkbox" name="brand" value="Bosch">Bosch
+          </label>
+          <label class="filters__label">
+            <input class="filters__checkbox" type="checkbox" name="brand" value="Bosch">Bosch
+          </label>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+</main>
