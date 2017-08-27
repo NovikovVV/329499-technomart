@@ -327,6 +327,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
 	max-width: 300px;
+  position: relative;
 }
 
 .user-block__login {
@@ -1430,4 +1431,103 @@ body {
 {
   display: block;
   animation: bounce .6s;
+}
+
+.catalog-page .cart {
+  background-color: #ee3643;
+}
+
+.catalog-page .cart:hover {
+  background-color: #ca2c37;
+}
+
+.user {
+  display: block;
+  width: 300px;
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.my-profile,
+.logout {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 15px;
+  top: 15px;
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logout {
+  left: 270px;
+  background-image: url(../img/icon-logout.svg);
+}
+
+.my-profile:hover {
+  background-image: url(../img/icon-user-blue.svg);
+}
+
+.my-profile:active,
+.logout:active {
+  opacity: 0.5;
+}
+
+.logout:hover {
+  background-image: url(../img/icon-logout-blue.svg);
+}
+
+.user:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.my-orders,
+.personal-area {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+}
+
+.my-orders:hover,
+.personal-area:hover {
+  color: #ee3643;
+}
+
+.my-orders:active,
+.personal-area:active {
+  opacity: 0.3;
+}
+
+.my-orders {
+  margin-left: 20px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.my-orders::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #32425c;
+  top: 6px;
+  right: -19px;
+}
+
+.catalog-page .header-contacts {
+  margin-left: 10px;
 }
