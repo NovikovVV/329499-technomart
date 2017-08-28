@@ -1615,11 +1615,34 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 	display: block;
-	padding-top: 10px;
+	padding-top: 12px;
 	padding-right: 19px;
-	padding-bottom: 10px;
+	padding-bottom: 12px;
 	padding-left: 19px;
 	background-color: #f7f3ec;
+}
+
+.sorting__item {
+  font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+  text-decoration-style: dotted;
+}
+
+.sorting__item:hover {
+  opacity: 1;
+  text-decoration-color: #ee3643;
+  text-decoration-style: solid;
+}
+
+.sorting__item.current {
+  color: #ee3643;
+  text-decoration: none;
+  opacity: 1;
+  background-color: transparent;
 }
 
 .filters__fieldset {
@@ -1687,6 +1710,21 @@ body {
 
 .sorting {
   width: 700px;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.sorting-name {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .shopping-window {
@@ -1704,4 +1742,64 @@ body {
 
 .catalog-page .main {
   padding-bottom: 0;
+}
+
+.promo {
+  padding-top: 63px;
+  padding-bottom: 73px;
+  background-color: #f2f6f8;
+}
+
+.promo__title {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.add-in-cart {
+  position: fixed;
+  top: 300px;
+  left: 50%;
+  height: 300px;
+  width: 620px;
+  background-color: #ffffff;
+  box-shadow:
+  0 20px 40px 0 rgba(41, 52, 73, 0.75),
+  inset 0 7px 0 0 #ff5357,
+  inset 0 -112px 0 0 #f1f1f1;
+  z-index: 100;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 37px;
+  background-image: url("../img/form-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-in-cart .btn {
+  width: 220px;
+}
+
+.add-in-cart .btn:not(.red) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.add-in-cart .container {
+  width: 460px;
+}
+
+.popup-text {
+  font-size: 30px;
+  line-height: 18px;
+  color: #000000;
+  align-self: center;
 }
