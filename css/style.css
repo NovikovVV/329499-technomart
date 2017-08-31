@@ -462,7 +462,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: flex-start;
 	margin-bottom: 45px;
 }
@@ -490,6 +489,7 @@ body {
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px center;
+  margin-right: 20px;
 }
 
 .tools {
@@ -497,6 +497,7 @@ body {
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: 197px center;
+  margin-right: 20px;
 }
 
 .mechanism {
@@ -533,6 +534,7 @@ body {
   width: 620px;
   height: 268px;
 	position: relative;
+  margin-right: 20px;
 }
 
 .prev-slide,
