@@ -1897,6 +1897,11 @@ body {
   text-align: left;
 }
 
+.promo .container {
+  text-align: left;
+  display: block;
+}
+
 .promo__title {
   font-size: 30px;
   line-height: 24px;
