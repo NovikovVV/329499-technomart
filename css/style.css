@@ -1,12 +1,10 @@
-html
-{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after
-{
+*::after {
   box-sizing: inherit;
 }
 
@@ -1795,6 +1793,14 @@ body {
 	background-image: url("../img/radio-off.svg");
 }
 
+.power__label:hover::before {
+  background-image: url("../img/radio-off-hover.svg");
+}
+
+.brands__label:hover::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+}
+
 .brands__checkbox,
 .power__radio {
   display: none;
@@ -1808,9 +1814,32 @@ body {
   background-image: url("../img/checkbox-on.svg");
 }
 
+#bosch:checked + .brands__label:hover::before,
+#interskol:checked + .brands__label:hover::before,
+#makita:checked + .brands__label:hover::before,
+#dewalt:checked + .brands__label:hover::before,
+#hitachi:checked + .brands__label:hover::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
 #battery:checked + .power__label::before,
 #net:checked + .power__label::before  {
   background-image: url("../img/radio-on.svg");
+}
+
+#battery:checked + .power__label:hover::before,
+#net:checked + .power__label:hover::before {
+  background-image: url("../img/radio-on-hover.svg");
+}
+
+#battery:checked + .power__label:disabled::before,
+#net:checked + .power__label:disabled::before,
+#bosch:checked + .brands__label:disabled::before,
+#interskol:checked + .brands__label:disabled::before,
+#makita:checked + .brands__label:disabled::before,
+#dewalt:checked + .brands__label:disabled::before,
+#hitachi:checked + .brands__label:disabled::before {
+  opacity: 0.3;
 }
 
 .sorting {
@@ -1919,46 +1948,56 @@ body {
   color: #000000;
 }
 
-.add-in-cart {
-  position: fixed;
-  top: 320px;
-  left: 50%;
-  margin-left: -310px;
-  height: 300px;
-  width: 620px;
-  background-color: #ffffff;
-  box-shadow:
-  0 20px 40px 0 rgba(41, 52, 73, 0.75),
-  inset 0 7px 0 0 #ff5357,
-  inset 0 -112px 0 0 #f1f1f1;
-  z-index: 100;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 37px;
-  background-image: url("../img/form-1.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 50px;
-	display: none;
-}
-
-.add-in-cart .btn {
-  width: 220px;
-}
-
-.add-in-cart .btn:not(.red) {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.add-in-cart .container {
-  width: 460px;
-}
-
 .popup-text {
   font-size: 30px;
   line-height: 18px;
   color: #000000;
   align-self: center;
+}
+
+.cart-popup {
+  position: fixed;
+	width: 620px;
+	top: 300px;
+	left: 50%;
+	margin-left: -250px;
+	box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+	z-index: 100;
+	background-color: #ffffff;
+	padding-top: 75px;
+	background-image: url("../img/form-1.svg");
+	background-repeat: no-repeat;
+	background-position: 100px 50px;
+	display: none;
+}
+
+.cart-popup__title {
+  display: block;
+  font-size: 30px;
+	line-height: 18px;
+	margin-bottom: 70px;
+	margin-left: 175px;
+}
+
+.cart-popup__actions {
+  padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 80px;
+	padding-right: 80px;
+	background-color: #f1f1f1;
+}
+
+.cart-popup__actions .btn {
+  width: 220px;
+}
+
+.cart-popup__actions .btn:first-of-type {
+  margin-right: 15px;
+}
+
+.cart-popup__actions .btn:last-of-type {
+  color: #000000;
+	background-color: #ffffff;
 }
 
 .modal-content-show {
