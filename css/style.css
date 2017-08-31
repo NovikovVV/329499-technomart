@@ -1533,7 +1533,7 @@ body {
 }
 
 .catalog-page .main-header {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .page-title {
@@ -1548,7 +1548,7 @@ body {
   padding-top: 29px;
   padding-bottom: 29px;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .breadcrumbs {
@@ -1592,6 +1592,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
+  padding-bottom: 60px;
 }
 
 .filters {
@@ -1604,6 +1605,11 @@ body {
 	color: #000000;
 	border: 1px solid #e5e5e5;
 	cursor: pointer;
+  margin-top: 35px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .filters .btn:hover {
@@ -1623,7 +1629,7 @@ body {
 	padding-bottom: 12px;
 	padding-left: 19px;
 	background-color: #f7f3ec;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .price-filter {
@@ -1725,7 +1731,7 @@ body {
 
 .filters__fieldset {
   margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	padding: 0;
 	border: none;
 	padding-bottom: 25px;
@@ -1743,7 +1749,7 @@ body {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 
 .brands__label,
@@ -1756,7 +1762,7 @@ body {
 	line-height: 20px;
 	color: #000000;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .brands__label:last-of-type,
@@ -1837,6 +1843,10 @@ body {
   margin-bottom: 20px;
 }
 
+.pagintaion {
+  margin-top: 30px;
+}
+
 .pagination__item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
@@ -1882,7 +1892,7 @@ body {
 
 .promo {
   padding-top: 63px;
-  padding-bottom: 73px;
+  padding-bottom: 55px;
   background-color: #f2f6f8;
 }
 
@@ -1891,6 +1901,7 @@ body {
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .promo__description {
