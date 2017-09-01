@@ -821,7 +821,9 @@ body {
 	width: 100px;
 	background-color: #ee3643;
 	color: #ffffff;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg); 
+          transform: rotate(45deg);
 	text-align: center;
 	z-index: 10;
   font-size: 15px;
@@ -1357,12 +1359,16 @@ body {
   width: 28px;
   height: 3px;
   background-color: #ee3643;
-  transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg); 
+          transform: rotate(45deg); 
   cursor: pointer;
 }
 
 .close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); 
+        transform: rotate(-45deg);
 }
 
 .map-popup {
