@@ -797,7 +797,8 @@ body {
 }
 
 .price {
-  margin-top: auto;
+  position: absolute;
+	bottom: 20px;
   color: #ffffff;
   left: 38px;
   background-image: url(../img/red-button.svg);
