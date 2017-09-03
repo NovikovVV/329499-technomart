@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,9 +15,9 @@
       <div class="container">
         <a class="logo-link">Техномарт</a>
         <form class="search-form" action="#" method="get">
-          <label class="search-form__label">
-						<input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск:">
-				  </label>
+        <label class="search-form__label">
+          <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск:">
+        </label>
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="cart" href="#">Корзина: 0</a>
@@ -28,10 +27,10 @@
     <div class="main-header__middle">
       <div class="container">
         <h1 class="main-title">
-					Интернет-магазин
-				  <span class="break-row">строительных материалов</span>
-					и инструментов для ремонта
-				</h1>
+          Интернет-магазин
+          строительных материалов
+          и&#160;инструментов для ремонта
+        </h1>
         <div class="header-contacts">
           <a class="tel" href="tel:7(812)555-05-55">+7 (812) 555-05-55</a>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -72,44 +71,44 @@
     <div class="container">
       <section class="catalog">
         <h2 class="visuallyhidden">
-					Каталог
-				</h2>
+          Каталог
+        </h2>
         <article class="catalog-category  materials  new">
           <h2 class="catalog-category__title">
-						Материалы
-					</h2>
+            Материалы
+          </h2>
           <a class="btn" href="#">На любой вкус</a>
         </article>
         <article class="catalog-category  tools">
           <h2 class="catalog-category__title">
-						Инструмент
-					</h2>
+            Инструмент
+          </h2>
           <a class="btn" href="#">На все случаи</a>
         </article>
         <article class="catalog-category  mechanism">
           <h2 class="catalog-category__title">
-						Техника
-					</h2>
+            Техника
+          </h2>
           <a class="btn" href="#">Для стройки</a>
         </article>
         <article class="slider">
-          <input class="slider__radio" type="radio" id="radio-1" name="toggle" checked>
-          <input class="slider__radio" type="radio" id="radio-2" name="toggle">
+          <input class="slider__radio" type="radio" id="radio-1" name="toggle" value="slide1" checked>
+          <input class="slider__radio" type="radio" id="radio-2" name="toggle" value="slide2">
           <div class="slider__controls">
             <label class="slider__label" for="radio-1"></label>
             <label class="slider__label" for="radio-2"></label>
           </div>
           <button class="prev-slide" type="button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
-					</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
+          </button>
           <button class="next-slide" type="button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
-					</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
+          </button>
           <div class="slides">
             <div class="slide">
               <h2 class="slide__title">
-								Перфораторы
-							</h2>
+                Перфораторы
+              </h2>
               <p class="slide__description">
                 Настоящие мужские игрушки
               </p>
@@ -117,8 +116,8 @@
             </div>
             <div class="slide">
               <h2 class="slide__title">
-								Дрели
-							</h2>
+                Дрели
+              </h2>
               <p class="slide__description">
                 Соседям на радость
               </p>
@@ -129,14 +128,14 @@
         <div class="catalog-item-wrap">
           <article class="catalog-category  sale">
             <h2 class="catalog-category__title">
-						  Скидки 50%
-						</h2>
+              Скидки 50%
+            </h2>
             <a class="btn" href="#">На 350 товаров</a>
           </article>
           <article class="catalog-category  delivery">
             <h2 class="catalog-category__title">
-						  Доставка
-						</h2>
+              Доставка
+            </h2>
             <a class="btn" href="#">Бесплатно</a>
           </article>
         </div>
@@ -156,7 +155,7 @@
             <a class="btn" href="#">В закладки</a>
           </div>
           <div class="catalog-item__img">
-            <img class="catalog-item__photo" src="img/catalog-item1.jpg" width="184" height="164" alt="Catalog item">
+            <img class="catalog-item__photo" src="img/catalog-item1.jpg" width="220" height="170" alt="Catalog item">
           </div>
           <h2 class="catalog-item__name">
             Перфоратор BOSCH BFG 9000
@@ -174,7 +173,7 @@
             <a class="btn" href="#">В закладки</a>
           </div>
           <div class="catalog-item__img">
-            <img class="catalog-item__photo" src="img/catalog-item2.jpg" width="127" height="112" alt="Catalog item">
+            <img class="catalog-item__photo" src="img/catalog-item2.jpg" width="220" height="170" alt="Catalog item">
           </div>
           <h2 class="catalog-item__name">
             Перфоратор BOSCH BFG 3000
@@ -192,7 +191,7 @@
             <a class="btn" href="#">В закладки</a>
           </div>
           <div class="catalog-item__img">
-            <img class="catalog-item__photo" src="img/catalog-item3.jpg" width="144" height="128" alt="Catalog item">
+            <img class="catalog-item__photo" src="img/catalog-item3.jpg" width="220" height="170" alt="Catalog item">
           </div>
           <h2 class="catalog-item__name">
             Перфоратор BOSCH BFG 6000
@@ -210,7 +209,7 @@
             <a class="btn" href="#">В закладки</a>
           </div>
           <div class="catalog-item__img">
-            <img class="catalog-item__photo" src="img/catalog-item4.jpg" width="127" height="112" alt="Catalog item">
+            <img class="catalog-item__photo" src="img/catalog-item4.jpg" width="220" height="170" alt="Catalog item">
           </div>
           <h2 class="catalog-item__name">
             Перфоратор BOSCH BFG 2000
@@ -230,28 +229,28 @@
           </a>
         </div>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/bosch.jpg" width="126" height="37" alt="Bosch">
+          <img class="brand__img" src="img/bosch.png" width="220" height="145" alt="Bosch">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/makita.jpg" width="123" height="40" alt="Makita">
+          <img class="brand__img" src="img/makita.png" width="220" height="145" alt="Makita">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/dewalt.jpg" width="146" height="44" alt="DeWALT">
+          <img class="brand__img" src="img/dewalt.png" width="220" height="145" alt="DeWALT">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/interskol.jpg" width="200" height="88" alt="Интерскол">
+          <img class="brand__img" src="img/interskol.png" width="220" height="145" alt="Интерскол">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/hitachi.jpg" width="169" height="31" alt="Hitachi">
+          <img class="brand__img" src="img/hitachi.png" width="220" height="145" alt="Hitachi">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/lg.jpg" width="121" height="73" alt="LG">
+          <img class="brand__img" src="img/lg.png" width="220" height="145" alt="LG">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/aeg.jpg" width="151" height="96" alt="AEG">
+          <img class="brand__img" src="img/aeg.png" width="220" height="145" alt="AEG">
         </a>
         <a class="brand" href="#">
-          <img class="brand__img" src="img/metabo.jpg" width="204" height="69" alt="Metabo">
+          <img class="brand__img" src="img/metabo.png" width="220" height="145" alt="Metabo">
         </a>
       </section>
     </div>
@@ -320,8 +319,8 @@
       <section class="info">
         <div class="about-us">
           <h2 class="about-us__title">
-						Компания «Техномарт»
-					</h2>
+            Компания «Техномарт»
+          </h2>
           <p class="about-us__description">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
@@ -329,28 +328,22 @@
             Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="partners">
-            <li class="partners__item">
-              <a class="partners__link" href="#">Деловые линии</a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#">Автотрейдинг</a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__link" href="#">ЖэлДорЭкспедиция</a>
-            </li>
+            <li class="partners__item">Деловые линии</li>
+            <li class="partners__item">Автотрейдинг</li>
+            <li class="partners__item">ЖэлДорЭкспедиция</li>
           </ul>
           <a class="btn  red" href="#">Подробнее о компании</a>
         </div>
         <div class="contacts">
           <h2 class="contacts__title">
-						Контакты
-					</h2>
+            Контакты
+          </h2>
           <p class="contacts__description">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <div class="map">
             <a class="map__link" href="#">
-              <img class="map__item" src="img/map.jpg" width="300" height="158" alt="Technomart">
+              <img class="map__item" src="img/map.png" width="300" height="158" alt="Technomart">
             </a>
           </div>
           <a class="btn  red" href="#">Заблудились? Напишите нам!</a>
@@ -404,7 +397,7 @@
         <div class="copyrights">
           <h2 class="visuallyhidden">Авторские права</h2>
           <p class="copyrights__item">
-					  &copy; 2010–2017 Компания «Техномарт» Все права защищены
+            &copy; 2010–2017 Компания «Техномарт» Все права защищены
           </p>
         </div>
         <div class="social">
@@ -431,11 +424,11 @@
     </div>
   </footer>
   <div class="map-popup">
-    <span class="close"></span>
+    <button class="close" type="button"></button>
     <iframe class="js-on-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af997c8bd318ea8664edd47beda1bab4c1230484c3f33f808c3edc1cbb3fc92ed&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="940" height="446"></iframe>
   </div>
   <div class="feedback-popup">
-    <span class="close"></span>
+    <button class="close" type="button"></button>
     <form class="feedback-form">
       <label class="feedback-form__label">
         Ваше имя:<input class="feedback-form__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
