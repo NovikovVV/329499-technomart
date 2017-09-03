@@ -362,7 +362,7 @@ body
     background-color: #f4f7f9;
 }
 
-.main-title
+.header-title
 {
     font-size: 16px;
     font-style: italic;
@@ -2469,6 +2469,11 @@ body
     padding: 0;
 
     border: none;
+}
+
+.brands__checkbox:disabled,
+.power__radio:disabled {
+  opacity: 0;
 }
 
 #bosch:checked + .brands__label::before,
